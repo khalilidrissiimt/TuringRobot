@@ -1,4 +1,5 @@
 # TuringRobot
+This project encompasses the development of an autonomous robot designed for educational purposes. It leverages the MeMegaPi board, making it compatible with a wide range of modules and sensors for diverse robotic applications. The primary aim is to demonstrate the integration of sensor input processing, motor control, and state-based logic to achieve reactive robotic behaviors.
 
 This repository hosts a Python script and a C++ program designed to work together to control a robot using a Finite State Machine (FSM) described in a CSV file.
 
@@ -8,6 +9,12 @@ The project includes:
 
 - A Python script (`turing.py`) that reads a CSV file representing FSM transitions and prepares the data for use in the C++ program.
 - A C++ application (`robotCode.cpp`) that implements the FSM to control the robot's movements and actions based on its current state and inputs from its environment.
+
+## Features
+
+The robot operates continuously, cycling through a loop where it reads sensor data, processes this information to determine its current state, and executes corresponding actions. These actions include object manipulation, movement, and reactive adjustments based on ultrasonic sensor readings.
+
+![Robot in Action](images/robot.jpg)
 
 ## Python CSV Reader for FSM Data
 
@@ -21,11 +28,11 @@ To run the script and parse the FSM data:
 python turing.py fsm_data.csv
 ``` 
 
-### C++ Robot Control System using FSM Data
+## C++ Robot Control System using FSM Data
 
 The `robot_control.cpp` file implements a robot control system using FSM data provided by the output of the Python script. The C++ program defines several arrays corresponding to each column in the CSV file: `states`, `current_values`, `values_to_write`, `displacements`, and `next_states`. These arrays drive the robot's behavior as dictated by the FSM.
 
-## C++ Array Initialization from FSM Data
+### C++ Array Initialization from FSM Data
 
 The FSM data is represented as arrays in C++:
 
