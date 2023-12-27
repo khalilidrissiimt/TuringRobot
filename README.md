@@ -1,6 +1,5 @@
 # TuringRobot
-This project encompasses the development of an autonomous robot designed for educational purposes. It leverages the MeMegaPi board, making it compatible with a wide range of modules and sensors for diverse robotic applications. The primary aim is to demonstrate the integration of sensor input processing, motor control, and state-based logic to achieve reactive robotic behaviors.
-
+This project encompasses the development of an autonomous robot designed to simulate the universal turing machine. It leverages the MeMegaPi board, making it compatible with a wide range of modules and sensors for diverse robotic applications.
 This repository hosts a Python script and a C++ program designed to work together to control a robot using a Finite State Machine (FSM) described in a CSV file.
 
 ## Description
