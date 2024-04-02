@@ -43,14 +43,7 @@ std::string values_to_write[numberOfEntries] = {"vide", "0", "0", "1", "1", "0"}
 std::string displacements[numberOfEntries] = {"droite", "droite", "droite", "gauche", "droite", "gauche"};
 std::string next_states[numberOfEntries] = {"e1", "e1", "e1", "e2", "fin", "e2"};
 ```
-## How to Compile and Run
-```bash
-g++ -o robot_control robot_control.cpp
-```
 
-```bash
-./robot_control
-```
 This program is expected to run in a robotic control system, responding to sensor inputs and controlling actuators as per the FSM logic.
 
 
